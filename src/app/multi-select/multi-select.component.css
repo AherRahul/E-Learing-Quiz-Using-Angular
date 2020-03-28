@@ -1,0 +1,16 @@
+.msc-checkbox {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    border: 3px solid #00adef;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.Mycontainer:active {
+    background-color: #00adef;
+    color: white;
+}

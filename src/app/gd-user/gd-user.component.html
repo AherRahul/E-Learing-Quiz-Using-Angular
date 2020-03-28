@@ -1,0 +1,22 @@
+<div class="Mycontainer row" style="height: 490px; background-color: #1e1e1e;">
+    <div class="col">
+
+    </div>
+    <div class="col-8" style="background-color: #fff; margin-top: 10px;">
+        <div class="row">
+            <div class="col" style="text-align: center; background-color: #e6e6e6; ">
+                <p style="margin-bottom: 0px; padding: 2px;">VOTE COUNT: {{count}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4" *ngFor="let Screens of user_screen" style="align-content: center">
+                <button type="button" class="btn btn-primary gdbutton" routerLink={{Screens.routing}} routerLinkActive="active" style="padding: 10px 50px; margin: 10px 20px; background-color: #808080">
+                    {{Screens.name}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><i class="fas fa-greater-than"></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col ">
+
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col" style="background-color:#00adef; padding: 5px; text-align: center; color: white;">
+        <h6 class="display-4" style="font-size: 40px">{{question_1_result.question_title}}</h6>
+        <p>{{question_1_result.question_description}}</p>
+    </div>
+</div>
+
+
+<div class="Mycontainer row" style="height: 490px; background-color: #1e1e1e;">
+    <div class="col">
+
+    </div>
+    <div class="col-8">
+        <div class="col" style="margin: 15px; background-color: #4d4d4d; color: white; ">
+            <p style="padding: 10px 20px;">{{question_1_result.question_instruction}}</p>
+        </div>
+        <div class="col" *ngFor="let option of question_1_result.options; let i = index" id="{{i+1}}" style="margin: 15px; background-color: #ccc !important; color: rgb(27, 27, 27); ">
+            <div class="row">
+                <div class="col" style="text-align: center; color: black; font-weight: 200px; padding-bottom: 10px;">
+                    <p style="padding: 25px; margin-bottom: -10px">{{option.options_title}}</p>
+
+                </div>
+                <div class="col Mycontainer" style="background-color: #999; padding-top: 25px;">
+                    <div class="progress">
+                        <div class="bcc-bubble cl-bubble" *ngIf="i == result;"> 100.0</div>
+                        <div class="progress-bar" role="progressbar" *ngIf="i == result;" style='width: 100%' aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col ">
+
+    </div>
+</div>

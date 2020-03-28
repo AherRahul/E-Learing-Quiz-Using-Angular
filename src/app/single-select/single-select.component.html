@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col" style="background-color:#00adef; padding: 5px; text-align: center; color: white;">
+        <h6 class="display-4" style="font-size: 40px">{{question_1.question_title}}</h6>
+        <p>{{question_1.question_description}}</p>
+    </div>
+</div>
+
+
+<div class="Mycontainer row" style="height: 490px; background-color: #1e1e1e;">
+    <div class="col">
+
+    </div>
+    <div class="col-8">
+        <div class="col" style="margin: 15px; background-color: #4d4d4d; color: white; ">
+            <p style="padding: 10px 20px;">{{question_1.question_instruction}}</p>
+        </div>
+        <div class="col" *ngFor="let option of question_1.options; let i = index" id="{{i+1}}" style="margin: 15px; background-color: #ccc !important; color: rgb(27, 27, 27); ">
+            <div class="row">
+                <div class="col-1" style="text-align: center; background-color: #00adef; font-weight: 100px; color: white;">
+                    <p style="margin-bottom: -0px; font-size: 50px; text-align: center;">{{option.options_Annotation}}</p>
+                </div>
+                <div class="col Mycontainer" (click)='save_ss_vote(i+1)'>
+                    <p style="padding: 25px; margin-bottom: -10px">{{option.options_title}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col" style="margin: 0px">
+            <div class="row">
+                <div class="col-10">
+
+                </div>
+                <div class="col-1 Mycontainer" style="color: white" *ngFor="let btn of question_1.button">
+                    <button type='{{btn.type}}' class="btn btn-success" routerLink='{{btn.routing}}' routerLinkActive="active">{{btn.button_title}}</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+
+        </div>
+    </div>
+    <div class="col ">
+
+    </div>
+</div>

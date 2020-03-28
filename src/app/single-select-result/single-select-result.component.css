@@ -1,0 +1,27 @@
+.Mycontainer:active {
+    background-color: #00adef;
+    color: white;
+}
+
+.progress-bar {
+    background-color: #ffd237;
+}
+
+.bcc-bubble {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.cl-bubble {
+    background-color: #e6e6e6;
+    color: #1e1e1e;
+    font-weight: 500;
+    padding: 3px 5px;
+    position: absolute;
+    border-radius: 4px;
+    font-size: .75rem;
+    bottom: 100%;
+    margin-bottom: -23px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

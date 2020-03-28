@@ -1,0 +1,11 @@
+.cl-textarea {
+    border: none;
+    color: #1e1e1e;
+    font-family: inherit;
+    font-size: .75rem;
+    height: 120px;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+}
